@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Drop Functionality</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <meta name="author" content="Rishabh Verma">
+    <meta name="description" content="This Page conatins two containers in which items can be dragged and dropped easily.">
+</head>
+
+<body>
+
+    <div class="container"> <!--Main Container-->
+
+        <div class="box" id="outer1"> <!--First Sub-Container-->
+
+            <!--Items In Container 1-->
+            <h2 id="first">Drag Items From here</h2>
+            <img src="img/download (1).png" alt="image" draggable="true" id="img1" ondragstart="drag(event)">
+            <p id="p1" draggable="true" ondragstart="drag(event)" >Hi There !</p>
+            <p id="p2" draggable="true" ondragstart="drag(event)" >😂</p>
+            <img src="img/williamstown-1057646.jpg" alt="image" draggable="true" id="img2" ondragstart="drag(event)" >
+            <p id="p3" draggable="true" ondragstart="drag(event)" >My Name is Rishabh & I'm very happy to be a front-end developer.</p>
+            <img src="img/favicon-32x32.png" alt="icon" draggable="true" id="img3" ondragstart="drag(event)">
+            <img src="img/download.png" alt="image" draggable="true" id="img4" ondragstart="drag(event)">
+            <a  id="link1" href="https://www.google.com/" target="_blank" draggable="true" ondragstart="drag(event)">www.google.com</a>
+
+        </div>
+        <div class="box" id="outer2"> <!--Second Sub Container-->
+            <h2 id="second">Drop Items Here</h2>
+            <div class="box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+    </div>
+
+    <p id="message"><!--Message To Be Written Here--></p>
+
+    <!--Reset Button-->
+    <div id="box3">
+        <button onclick="window.location.reload();">Reset</button>
+    </div>
+
+    <!--Creator Name-->
+    <footer>
+        WebPage Created By Rishabh Verma
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
